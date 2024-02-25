@@ -1,0 +1,461 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navbar styling */
+.navbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+.logo {
+    width: 20%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.7) url(/images/background.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.logo img {
+    width: 30%;
+    height: 90%;
+    background-color: rgba(216, 216, 216, 0.904);
+    border-radius: 50%;
+}
+
+.nav-list {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 20px 23px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list li a:hover {
+    color: gray;
+}
+
+.rightnav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 50%;
+    text-align: right;
+    padding: 0px 20px;
+}
+
+#search {
+    font-size: 13px;
+    padding: 6px;
+    font-size: 17px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    margin-inline-end: 5px;
+}
+
+.burger {
+    display: none;
+}
+.pizza{
+    display: none;
+}
+
+/* navbar styles end */
+/* main section styling */
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 55%;
+    height: 465px;
+}
+
+.first-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.f-half {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    height: 100%;
+    opacity: 0.5;
+    padding: 30px;
+}
+
+.text-big {
+    font-size: 26px;
+}
+
+.taxt-small {
+    font-size: 13px;
+}
+
+.buttons {}
+
+.s-half {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: black;
+
+
+}
+
+.s-half img {
+    width: 100%;
+    display: block;
+    margin: auto;
+    /* border-radius: 50%; */
+    opacity: 0.5;
+    height: 100%;
+}
+.btn a{
+   text-decoration: none;
+   color: white;
+}
+/* text section */
+.second-section {
+    padding-block: 90px;
+    background: url(/images/bigbg.jpg)center center/cover;
+    background-blend-mode: darken;
+    /* background-color: rgba(51, 50, 50, 0.788);
+    opacity: ; */
+    color: white;
+}
+
+.sec-right {
+    background-color: rgba(0, 0, 0, 0.479);
+    margin-bottom: 100px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    max-width: 90%;
+    margin-left: 40px;
+}
+
+.paras {
+    padding: 30px;
+    margin-block: auto;
+    height: 400px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sectiontag {
+    font-size: 35px;
+    margin-bottom: 5px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: lightslategray;
+
+}
+
+.sectionsubtag {
+    font-size: 14px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    word-spacing: 3px;
+}
+
+.thumbnail {
+    /* margin-block: auto; */
+    /* height: 400px; */
+    /* width: 400px; */
+    display: flex;
+    align-items: center;
+
+}
+
+.thumbnail img {
+    background: center center/cover;
+    height: 250px;
+    width: 250px;
+
+}
+
+.extra {
+    flex-direction: column-reverse;
+}
+
+.link {
+    /* display: block; */
+    /* flex-direction: column; */
+    /* display: flex; */
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 5px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* text section end */
+/* footer */
+.foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    color: white;
+}
+.foot2{
+    height: 40px;
+    width: 100%;
+    background-color: rgb(36, 35, 35);
+}
+
+/* footer end */
+/* buttons */
+.btn {
+    padding: 5px 20px;
+    margin-block: 15px;
+    margin-inline: 5px;
+    border-radius: 6px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-sm {
+    color: black;
+
+}
+
+.btn-sm i {
+    color: black;
+    font-size: 17px;
+
+}
+
+/* buttonsend */
+@media (max-width:999px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    /* nav */
+    .rightnav {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        width: 20%;
+        text-align: right;
+        padding: 0px 20px;
+    }
+
+    .nav-list {
+        width: 80%;
+        display: flex;
+        align-items: center;
+    }
+    /* hero */
+    .first-section {
+        height: 90vh;
+    }
+
+    .box-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        max-width: 60%;
+        height: 80%;
+    }
+
+    .f-half {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: black;
+        opacity: 0.5;
+        padding: 30px;
+        height: 50%;
+    }
+
+    .s-half {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        background-color: black;
+    }
+
+    .s-half img {
+        /* width: 300px; */
+        display: block;
+        margin: auto;
+        /* border-radius: 50%; */
+        opacity: 0.5;
+        height: 100%;
+    }
+
+    .text-big {
+        font-size: 19px;
+        margin-block: 17px;
+    }
+
+    .taxt-small {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    /* text */
+    .sec-right {
+        background-color: rgba(0, 0, 0, 0.479);
+        /* margin-bottom: 100px; */
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        max-width: 90%;
+        margin-inline: auto;
+        margin-block: 50px;
+        flex-direction: column;
+    }
+    .secd{
+        flex-direction: column;
+    }
+    .thumbnail{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .thumbnail img{
+        width: 80%;
+
+    }
+    .paras {
+        padding: 30px;
+        margin-block: auto;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .extra{
+        flex-direction: column-reverse;
+    }
+    .foot{
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width:800px) {
+    .navbar {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .rightnav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .burger {
+        display: block;
+        height: 35px;
+        width: 41px;
+        border: 2px solid black;
+        border-radius: 9px;
+        color: white;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0px 6px;
+    }
+
+    .burger li {
+        list-style: none;
+        height: 2px;
+        width: 100%;
+        background-color: white;
+        /* border: 2px solid black; */
+        /* border-radius: 9px; */
+        /* color: white; */
+    }
+
+    .nav-list {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        display: contents;
+    }
+
+    .t {
+        display: none;
+    }
+
+    .pizza {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        padding-right: 20px;
+    }
+
+}
+@media (max-width:281px){
+    .f-half {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: black;
+        opacity: 0.5;
+        padding: 30px;
+        height: 100%;
+    }
+    .s-half {
+        /* width: 300px; */
+        display:none;
+        margin: auto;
+        /* border-radius: 50%; */
+        opacity: 0.5;
+        height: 100%;
+    }
+
+}
